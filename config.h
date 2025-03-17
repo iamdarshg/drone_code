@@ -34,6 +34,6 @@ enum { LED_pin = 11 };
 enum { LED = 1 << LED_pin };
 
 /// bit-band "variable" to directly handle the pin
-#define LED_bb								BITBAND(&LPC_GPIO_PORT->PIN[LED_GPIO], LED_pin)
+#define LED_bb	BITBAND(&LPC_GPIO_PORT->PIN[LED_GPIO], LED_pin)
 
 #endif	// CONFIG_H_
