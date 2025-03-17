@@ -45,7 +45,7 @@ PROVIDE(__process_stack_size = __process_stack_size);
 MEMORY
 {
 	/* Spansion S25FL032P - 4MB (32Mb) quad SPI flash, connected to ICode, DCode and System buses */
-	rom (rx)		: org = 0x14000000, len = 16M
+	rom (rx)		: org = 0x14000000, len = 4M
 
 	/* Local SRAM, connected to ICode and DCode buses */
 	ram (rwx)		: org = 0x10000000, len = 128k
